@@ -1,0 +1,15 @@
+#!/bin/sh
+case "$1" in
+"play")
+control-pianobar p
+;;
+"stop")
+control-pianobar quit
+;;
+"next")
+control-pianobar next
+;;
+"prev")
+control-pianobar switchstation
+;;
+esac

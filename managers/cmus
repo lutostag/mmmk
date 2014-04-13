@@ -1,0 +1,15 @@
+#!/bin/sh
+case "$1" in
+"play")
+cmus-remote -u
+;;
+"stop")
+cmus-remote -s
+;;
+"next")
+cmus-remote -n
+;;
+"prev")
+cmus-remote -r
+;;
+esac

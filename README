@@ -1,0 +1,19 @@
+mmmk: Multiple Music Manager Keybindings (Helper)
+
+useful for selecting between many music managers to control with your keyboards keybindings.
+
+must have dmenu installed
+
+install with:
+sudo make install
+
+use:
+mmmk select
+mmmk next
+mmmk prev
+mmmk play
+mmmk stop
+
+you can disable music managers by appending .disabled to the filename so they will not show up in the select list which exist at /usr/local/share/mmmk/
+
+Welcoming pull requests with new managers

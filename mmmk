@@ -1,0 +1,17 @@
+#!/bin/sh
+file=~/.config/mmmk/current
+managers=/usr/local/share/mmmk
+
+choosen=$(cat $file 2>/dev/null)
+case "$1" in
+"select")
+    choosen=$(ls -1 $managers | grep -v \\.disabled$ | dmenu -p "$choosen")
+    if [ -n "$choosen" ]
+    then
+        echo -n $choosen > $file
+    fi
+;;
+*)
+    $managers/$choosen $1
+;;
+esac
