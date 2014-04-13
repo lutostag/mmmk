@@ -1,5 +1,5 @@
 #!/bin/sh
-file=~/.config/mmmk/current
+file=~/.config/mmmk.current
 managers=/usr/local/share/mmmk
 
 choosen=$(cat $file 2>/dev/null)
